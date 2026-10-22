@@ -450,11 +450,12 @@ try
 					info "kwtsms_send: ERR013 at batch, sent " + total_sent + " so far";
 					return result;
 				}
-				// ERR028: 15s cooldown
+				// ERR028: duplicate SMS protection (opt-in per account, per-account window, 10 s default). Whole request rejected, nothing charged.
+				// 2026-10-22 15:37 +03: message corrected, the old text claimed a fixed 15 s wait.
 				if(error_code.contains("ERR028"))
 				{
 					result.put("status", "ERROR");
-					result.put("error", "Please wait 15 seconds before sending to this number again.");
+					result.put("error", "Sent to the same number too soon. Please try again shortly.");
 					info "kwtsms_send: ERR028 - cooldown";
 					return result;
 				}

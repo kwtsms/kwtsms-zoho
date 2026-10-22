@@ -89,7 +89,7 @@
   "error_no_valid_numbers": "No valid phone numbers",
   "error_message_empty": "Message is empty",
   "error_message_too_long": "Message too long (max 7 pages)",
-  "error_cooldown": "Please wait 15 seconds before sending to this number again",
+  "error_cooldown": "This number was sent the same message too recently. Please try again shortly.",
   "error_queue_full": "kwtSMS queue is full. Please try again later.",
   "error_invalid_number": "Invalid phone number length",
   "error_no_route": "Country not supported. Check your kwtSMS coverage.",
