@@ -1,7 +1,7 @@
 # kwtSMS for Zoho CRM
 
 [![Zoho Marketplace](https://img.shields.io/badge/Zoho_Marketplace-kwtSMS-blue?logo=zoho)](https://marketplace.zoho.com/app/crm/kwtsms-for-zoho-crm)
-[![Version](https://img.shields.io/badge/version-1.0-green)](https://github.com/boxlinknet/kwtsms-zoho/releases)
+[![Version](https://img.shields.io/badge/version-1.0-green)](https://github.com/kwtsms/kwtsms-zoho/releases)
 [![Edition](https://img.shields.io/badge/Zoho_CRM-Professional%2B-orange)](https://www.zoho.com/crm/zoho-crm-pricing.html)
 [![License](https://img.shields.io/badge/license-Proprietary-lightgrey)](LICENSE)
 [![kwtSMS](https://img.shields.io/badge/SMS_Gateway-kwtSMS-FFA200?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiI+PHRleHQgeT0iMTIiIGZvbnQtc2l6ZT0iMTIiPvCfk6g8L3RleHQ+PC9zdmc+)](https://www.kwtsms.com)
