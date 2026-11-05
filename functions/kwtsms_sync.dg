@@ -56,6 +56,9 @@ try
 	auth_payload = Map();
 	auth_payload.put("username", api_username);
 	auth_payload.put("password", api_password);
+	// 2026-11-05 14:58 +03: identify the integration to kwtSMS (name and version only, no personal data);
+	// Deluge cannot read package.json, keep this equal to its "version", #939.
+	auth_payload.put("client", "kwtsms-zoho/1.0.0");
 	balance_response = invokeurl
 	[
 		url: "https://www.kwtsms.com/API/balance/"

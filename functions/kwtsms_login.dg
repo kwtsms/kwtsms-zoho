@@ -13,6 +13,9 @@ try
 	balance_payload = Map();
 	balance_payload.put("username", username);
 	balance_payload.put("password", password);
+	// 2026-11-05 14:58 +03: identify the integration to kwtSMS (name and version only, no personal data);
+	// Deluge cannot read package.json, keep this equal to its "version", #939.
+	balance_payload.put("client", "kwtsms-zoho/1.0.0");
 	info "kwtsms_login: attempting login (credentials masked)";
 	balance_response = invokeurl
 	[
@@ -49,6 +52,9 @@ try
 	senderid_payload = Map();
 	senderid_payload.put("username", username);
 	senderid_payload.put("password", password);
+	// 2026-11-05 14:58 +03: identify the integration to kwtSMS (name and version only, no personal data);
+	// Deluge cannot read package.json, keep this equal to its "version", #939.
+	senderid_payload.put("client", "kwtsms-zoho/1.0.0");
 	try
 	{
 		senderid_response = invokeurl
@@ -76,6 +82,9 @@ try
 	coverage_payload = Map();
 	coverage_payload.put("username", username);
 	coverage_payload.put("password", password);
+	// 2026-11-05 14:58 +03: identify the integration to kwtSMS (name and version only, no personal data);
+	// Deluge cannot read package.json, keep this equal to its "version", #939.
+	coverage_payload.put("client", "kwtsms-zoho/1.0.0");
 	try
 	{
 		coverage_response = invokeurl

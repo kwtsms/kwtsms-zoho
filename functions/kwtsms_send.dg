@@ -398,6 +398,9 @@ try
 		send_payload = Map();
 		send_payload.put("username", api_username);
 		send_payload.put("password", api_password);
+		// 2026-11-05 14:58 +03: identify the integration to kwtSMS (name and version only, no personal data);
+		// Deluge cannot read package.json, keep this equal to its "version", #939.
+		send_payload.put("client", "kwtsms-zoho/1.0.0");
 		send_payload.put("sender", final_sender_id);
 		send_payload.put("mobile", batch_mobile);
 		send_payload.put("message", cleaned);

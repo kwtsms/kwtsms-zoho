@@ -38,6 +38,9 @@ expressApp.post('/api/proxy', function(req, res) {
     }
 
     var url = 'https://www.kwtsms.com/API/' + endpoint + '/';
+    // 2026-11-05 14:58 +03: identify the integration (name and version from package.json, no personal data), #939.
+    var clientToken = 'kwtsms-zoho/' + require('../package.json').version;
+    payload.client = clientToken;
     var postData = JSON.stringify(payload);
 
     var urlModule = require('url');
@@ -49,6 +52,8 @@ expressApp.post('/api/proxy', function(req, res) {
         headers: {
             'Content-Type': 'application/json',
             'Accept': 'application/json',
+            // 2026-11-05 14:58 +03: same token in the User-Agent, #939.
+            'User-Agent': clientToken,
             'Content-Length': Buffer.byteLength(postData)
         }
     };

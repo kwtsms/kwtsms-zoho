@@ -124,6 +124,9 @@ try
 	validate_payload = Map();
 	validate_payload.put("username", api_username);
 	validate_payload.put("password", api_password);
+	// 2026-11-05 14:58 +03: identify the integration to kwtSMS (name and version only, no personal data);
+	// Deluge cannot read package.json, keep this equal to its "version", #939.
+	validate_payload.put("client", "kwtsms-zoho/1.0.0");
 	validate_payload.put("mobile", mobile_string);
 	validate_response = invokeurl
 	[
