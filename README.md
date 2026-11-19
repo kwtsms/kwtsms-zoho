@@ -9,6 +9,8 @@
 
 Send SMS from Zoho CRM via [kwtSMS](https://www.kwtsms.com) gateway.
 
+All kwtSMS integrations: [kwtsms.com/integrations](https://www.kwtsms.com/integrations/)
+
 ## Overview
 
 A lightweight SMS gateway connector that integrates [kwtSMS](https://www.kwtsms.com) into Zoho CRM. Send SMS messages directly from Contact, Lead, and Deal records, or automate SMS notifications using Zoho's built-in workflow rules.
