@@ -1,3 +1,8 @@
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/assets/readme-header-dark.png">
+  <img alt="kwtSMS for Zoho" src=".github/assets/readme-header-light.png">
+</picture>
+
 # kwtSMS for Zoho CRM
 
 [![Zoho Marketplace](https://img.shields.io/badge/Zoho_Marketplace-kwtSMS-blue?logo=zoho)](https://marketplace.zoho.com/app/crm/kwtsms-for-zoho-crm)
